@@ -1,0 +1,15 @@
+# Spring
+spring:
+  application:
+    name: '@project.artifactId@'
+    index: ${spring.application.name}
+
+# Info
+info:
+  application:
+    groupId:  '@project.groupId@'
+    artifactId: '@project.artifactId@'
+    version: '@project.version@'
+    environment: ${spring.profiles.active:default}
+    apiVersion: v1
+    port: 8080
