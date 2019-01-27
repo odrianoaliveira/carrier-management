@@ -9,21 +9,31 @@ class CarrierRouter(private val handler: CarrierHandler) {
 
     @Bean
     fun router() = router {
+        POST("/carriers/load") {
+            handler.load()
+        }
         GET("/carriers") {
             handler.fetchAll()
+        }
+        DELETE("/carriers"){
+            handler.deleteALl()
         }
 
         GET("/carrier/{code}") {
             handler.fetchById(it)
         }
 
-        DELETE("/carriers"){
-            handler.deleteALl()
-        }
-
-        POST("/carriers/load") {
-            handler.load()
-        }
+//        PUT("/carrier/{code}") {
+//            handler.updateCarrier(it)
+//        }
+//
+//        PATCH("/carrier/{code}") {
+//            handler.patchById(it)
+//        }
+//
+//        DELETE("/carrier/{code}") {
+//            handler.deleteById(it)
+//        }
     }
 
 }

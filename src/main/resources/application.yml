@@ -23,7 +23,7 @@ metadata:
         phoneNumber: "+44 330 365 5454"
       termAndConditions:
         label: "terms_conditions_generic_provider"
-        urls:
+        localizedUrls:
           - fr: "http://www.easyjet.com/fr/terms-and-conditions"
           - es: "http://www.easyjet.com/es/terms-and-conditions"
           - cn: "http://www.easyjet.com/cn/terms-and-conditions"

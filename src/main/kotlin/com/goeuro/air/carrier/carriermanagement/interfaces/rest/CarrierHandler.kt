@@ -26,12 +26,12 @@ class CarrierHandler(private val service: CarrierService) {
         }
     }
 
-    fun load(): Mono<ServerResponse>{
+    fun load(): Mono<ServerResponse> {
         service.load()
         return ServerResponse.ok().build()
     }
 
-    fun deleteALl(): Mono<ServerResponse>{
+    fun deleteALl(): Mono<ServerResponse> {
         service.deleteAll()
         return ServerResponse.noContent().build()
     }

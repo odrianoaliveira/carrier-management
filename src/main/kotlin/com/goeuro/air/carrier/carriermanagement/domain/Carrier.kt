@@ -7,9 +7,9 @@ import org.springframework.data.mongodb.core.mapping.Document
 class Carrier {
     @Id
     var id: String? = null
-    lateinit var displayName: String
+    var displayName: String? = null
     var iataCodes: List<String>? = null
-    val contact = Contact()
-    val termAndConditions = TermAndConditions()
-    lateinit var passengerAgeCategories: Map<PassengerCategory, AgeRange>
+    var contact: Contact? = null
+    var termAndConditions: TermAndConditions? = null
+    var passengerAgeCategories: Map<PassengerCategory, AgeRange>? = null
 }

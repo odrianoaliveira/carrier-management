@@ -1,6 +1,6 @@
 package com.goeuro.air.carrier.carriermanagement.domain
 
 class Contact {
-    lateinit var phoneNumber: String
-    lateinit var website: String
+    var phoneNumber: String? = null
+    var website: String? = null
 }

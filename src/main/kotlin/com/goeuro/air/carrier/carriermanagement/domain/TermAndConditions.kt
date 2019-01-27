@@ -1,8 +1,10 @@
 package com.goeuro.air.carrier.carriermanagement.domain
 
-import java.net.URL
-
 class TermAndConditions {
-    lateinit var label: String
-    lateinit var urls: Map<String, URL>
+    var label: String? = null
+    var localizedUrls: Map<String, String>? = null
 }
+
+//class URL {
+//    var url: String? = null
+//}
